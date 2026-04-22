@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanam - Katering Hangat &amp; Terjangkau</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="container">
+      <div class="logo">🌿 Tanam</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#promo">Promo</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#paket">Paket</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <button class="hamburger">☰</button>
+      <button id="cart-toggle" class="cart-btn" style="background:none;border:none;color:white;font-size:1.5rem;cursor:pointer;margin-left:1rem;">🛒 <span id="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 style="color: rgb(255, 177, 0);">Rezeki Hangat di Setiap Suapan</h1>
+<p class="slogan" style="color: #e47200;">Katering rumahan penuh berkah untuk keluarga tercinta</p>
+      <a href="#menu" class="cta">Pesan Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Promo -->
+  <section id="promo" class="container">
+    <h2>Promo Spesial Mingguan</h2>
+    <div class="promo-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615484473438-8da6149b8aee?w=400" alt="Promo Senin">
+        <div class="card-content">
+          <h3>Senin Hemat</h3>
+          <div class="badges">
+            <span class="badge">Diskon 20%</span>
+            <span class="badge">Min Order Rp50rb</span>
+          </div>
+          <p>Nasi Ayam + Es Teh hanya Rp20.000</p>
+          <button class="add-cart-btn" data-name="Senin Hemat" data-price="20000">+ Keranjang</button>
+          <a href="#order" class="wa-btn" data-message="Promo Senin Hemat!">Order via WA</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400" alt="Promo Kamis">
+        <div class="card-content">
+          <h3>Kamis Bebek</h3>
+          <div class="badges">
+            <span class="badge">Terlaris</span>
+            <span class="badge">Porsi Besar</span>
+          </div>
+          <p>Bebek Goreng + Lalapan Rp35.000</p>
+          <button class="add-cart-btn" data-name="Kamis Bebek" data-price="35000">+ Keranjang</button>
+          <a href="#order" class="wa-btn" data-message="Promo Kamis Bebek!">Order via WA</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400" alt="Promo Jumat">
+        <div class="card-content">
+          <h3>Jumat Ikan Bakar</h3>
+          <div class="badges">
+            <span class="badge">Hemat</span>
+            <span class="badge">Barokah</span>
+          </div>
+          <p>Paket Ikan Bakar + Nasi Rp28.000</p>
+          <button class="add-cart-btn" data-name="Jumat Ikan Bakar" data-price="28000">+ Keranjang</button>
+          <a href="#order" class="wa-btn" data-message="Promo Jumat Ikan Bakar!">Order via WA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" style="background: #f0f8f0;">
+    <div class="container">
+      <h2>Menu Katering Harian</h2>
+      <div class="menu-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1615484473438-8da6149b8aee?w=300" alt="Nasi Ayam">
+          <div class="card-content">
+            <h3>Nasi Ayam Suwir</h3>
+            <div class="badges">
+              <span class="badge">Porsi Besar</span>
+              <span class="badge">Rp22.000</span>
+            </div>
+            <p>Ayam suwir, telur, sayur, sambal dadak. Cukup untuk 1 orang dewasa.</p>
+            <div class="price">Rp22.000</div>
+            <button class="add-cart-btn" data-name="Nasi Ayam Suwir" data-price="22000">+ Keranjang</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1621996346565-e3edc356fc32?w=300" alt="Nasi Bebek">
+          <div class="card-content">
+            <h3>Nasi Bebek Goreng</h3>
+            <div class="badges">
+              <span class="badge">Terlaris</span>
+              <span class="badge">Rp30.000</span>
+            </div>
+            <p>Bebek goreng crispy dengan lalapan segar dan sambal matah.</p>
+            <div class="price">Rp30.000</div>
+            <button class="add-cart-btn" data-name="Nasi Bebek Goreng" data-price="30000">+ Keranjang</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1579588233888-01e8924830da?w=300" alt="Ikan Bakar">
+          <div class="card-content">
+            <h3>Nasi Ikan Bakar</h3>
+            <div class="badges">
+              <span class="badge">Hemat</span>
+              <span class="badge">Rp25.000</span>
+            </div>
+            <p>Ikan kakap bakar bumbu rica + tempe goreng + sayur.</p>
+            <div class="price">Rp25.000</div>
+            <button class="add-cart-btn" data-name="Nasi Ikan Bakar" data-price="25000">+ Keranjang</button>
+          </div>
+        </div>
+        <!-- Drinks -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1572493083709-62f3d4d42c02?w=300" alt="Es Teh">
+          <div class="card-content">
+            <h3>Es Teh Manis</h3>
+            <div class="badges">
+              <span class="badge">Rp5.000</span>
+              <span class="badge">Hemat</span>
+            </div>
+            <p>Es teh manis segar kemasan 500ml.</p>
+            <div class="price">Rp5.000</div>
+            <button class="add-cart-btn" data-name="Es Teh Manis" data-price="5000">+ Keranjang</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1626074392685-323c8f6a8ce5?w=300" alt="Jus Jeruk">
+          <div class="card-content">
+            <h3>Jus Jeruk Fresh</h3>
+            <div class="badges">
+              <span class="badge">Rp8.000</span>
+              <span class="badge">Porsi Besar</span>
+            </div>
+            <p>Jus jeruk segar peras 300ml.</p>
+            <div class="price">Rp8.000</div>
+            <button class="add-cart-btn" data-name="Jus Jeruk Fresh" data-price="8000">+ Keranjang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paket -->
+  <section id="paket">
+    <div class="container">
+      <h2>Paket Hemat &amp; Sharing</h2>
+      <div class="paket-grid">
+        <div class="card">
+          <img src="image/" alt="">
+          <div class="card-content">
+            <h3>Paket Hemat 4 Orang</h3>
+            <div class="badges">
+              <span class="badge">Rp85.000</span>
+              <span class="badge">Hemat 25%</span>
+            </div>
+            <p>2 Nasi Ayam + 1 Ayam Bakar + Sayur + Es Teh x4</p>
+            <div class="price">Rp85.000</div>
+            <button class="add-cart-btn" data-name="Paket Hemat 4 Orang" data-price="85000">+ Keranjang</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300" alt="Paket Sharing">
+          <div class="card-content">
+            <h3>Paket Sharing Nusantara</h3>
+            <div class="badges">
+              <span class="badge">Rp150.000</span>
+              <span class="badge">6-8 Orang</span>
+            </div>
+            <p>Ayam opor, rendang, sambal goreng ati, sayur, kue</p>
+            <div class="price">Rp150.000</div>
+            <button class="add-cart-btn" data-name="Paket Sharing Nusantara" data-price="150000">+ Keranjang</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1626074392685-323c8f6a8ce5?w=300" alt="Paket Timur Tengah">
+          <div class="card-content">
+            <h3>Paket Timur Tengah</h3>
+            <div class="badges">
+              <span class="badge">Rp180.000</span>
+              <span class="badge">Barokah</span>
+            </div>
+            <p>Mansaf, hummus, falafel, shawarma + nasi + dessert</p>
+            <div class="price">Rp180.000</div>
+            <button class="add-cart-btn" data-name="Paket Timur Tengah" data-price="180000">+ Keranjang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership -->
+<section id="membership" style="background: #26282a; padding: 5rem 0;">
+    <div class="container">
+<h2 style="color: #e47200;">Bergabung Membership Tanam</h2>
+      <p style="text-align:center; font-size:1.1rem; margin-bottom:2rem;">Dapatkan diskon 10% order pertama + poin setiap beli</p>
+      <form id="membershipForm">
+        <div class="form-group">
+          <label>Nama Lengkap</label>
+          <input type="text" id="memName" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="memEmail" required>
+        </div>
+        <div class="form-group">
+          <label>No. WhatsApp</label>
+          <input type="tel" id="memPhone" required>
+        </div>
+        <button type="submit" class="cta" style="width:100%; margin-top:1rem;">Daftar Sekarang</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Order -->
+<section id="order" style="background: #2b1b17;">
+    <div class="container">
+      <h2 style="color: white;">Pesan Sekarang</h2>
+      <p style="text-align:center; margin-bottom:2rem; color: white;">Pilih opsi pemesanan yang mudah untuk Anda</p>
+      <div style="display:grid; grid-template-columns:1fr; gap:1rem; margin-bottom:2rem;">
+        <a href="#orderForm" class="cta" style="text-align:center;">Form Online</a>
+        <a href="https://wa.me/6281234567890" class="wa-btn" style="margin:0;">WhatsApp</a>
+        <p style="text-align:center; color: white;">📍 Datang langsung ke outlet: Jl. Contoh No.123, Jakarta</p>
+      </div>
+      <form id="orderForm">
+        <div class="form-group">
+          <label>Nama</label>
+          <input type="text" id="orderName" required>
+        </div>
+        <div class="form-group">
+          <label>Alamat Lengkap</label>
+          <textarea id="orderAddress" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>No. HP</label>
+          <input type="tel" id="orderPhone" required>
+        </div>
+        <div class="form-group">
+          <label>Menu Pilihan</label>
+          <select id="orderMenu" required>
+            <option value="">Pilih Menu</option>
+            <option>Nasi Ayam Suwir</option>
+            <option>Nasi Bebek Goreng</option>
+            <option>Nasi Ikan Bakar</option>
+            <option>Paket Hemat 4 Orang</option>
+            <option>Paket Sharing Nusantara</option>
+            <option>Lainnya (chat WA)</option>
+          </select>
+        </div>
+        <button type="submit" class="cta" style="width:100%;">Kirim ke WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section style="background: linear-gradient(to bottom, #D2B48C, #8B4513);">
+    <div class="container">
+      <h2>Apa Kata Pelanggan</h2>
+      <div class="testimoni-grid">
+        <div class="testimoni">
+          <p>"Porsi besar banget! Cukup buat makan malam keluarga berempat. Rasanya seperti masakan ibu sendiri. Terima kasih Tanam!"</p>
+          <strong>- Ibu Sari, Jakarta</strong>
+        </div>
+        <div class="testimoni">
+          <p>"Harga terjangkau tapi kualitas mantap. Promo Senin selalu saya tunggu. Recommended!"</p>
+          <strong>- Andi, Mahasiswa</strong>
+        </div>
+        <div class="testimoni">
+          <p>"Paket sharingnya enak dan halal berkah. Cocok buat acara keluarga kecil."</p>
+          <strong>- Pak Budi</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+<section id="tentang" style="background: #2c3227; color: white; padding: 5rem 0;">
+    <div class="container">
+      <h2 style="color: rgb(255, 177, 0); font-weight: bold;">Tentang Tanam</h2>
+      <p style="font-size:1.1rem; text-align:center; max-width:800px; margin:0 auto; color: white;">
+        Tanam lahir dari kecintaan pada masakan rumahan sederhana yang penuh berkah. 
+        Kami percaya makanan enak harus terjangkau dan mudah dijangkau semua kalangan. 
+        Setiap suapan Tanam membawa rasa syukur dan kehangatan keluarga.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <div class="container">
+      <h2>Hubungi Kami</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; text-align:center;">
+        <div>
+          <p><strong>📱 WhatsApp:</strong></p>
+          <a href="https://wa.me/6281234567890" class="wa-btn">Chat Sekarang</a>
+        </div>
+        <div>
+          <p><strong>📍 Alamat:</strong></p>
+          <p>Jl. Contoh Raya No.123<br>Jakarta Selatan</p>
+        </div>
+        <div>
+          <p><strong>🕒 Jam Operasional:</strong></p>
+          <p>Senin-Minggu 10:00-22:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&amp;copy; 2024 Tanam Katering. Semua hak dilindungi. 🌿</p>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-overlay"></div>
+    <div class="cart-content">
+      <div class="cart-header">
+        <h3>🛒 Keranjang Tanam</h3>
+        <button class="close-cart">&amp;times;</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        Keranjang kosong
+      </div>
+      <div class="cart-total">
+        <h4>Total: <span id="cart-total">Rp 0</span></h4>
+      </div>
+      <div class="cart-actions">
+        <button class="clear-btn" id="clear-cart">Kosongkan</button>
+        <button class="checkout-btn" id="checkout-cart" onclick="checkoutCart()">Checkout</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
